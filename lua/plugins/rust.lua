@@ -1,5 +1,8 @@
 return {
   {
+    "rust-lang/rust.vim",
+  },
+  {
     "simrat39/rust-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     ---@param opts cmp.ConfigSchema
@@ -172,6 +175,11 @@ return {
           -- standalone file support
           -- setting it to false may improve startup time
           standalone = true,
+          ['rust-analyzer'] = {
+            macros = {
+              enabled = true
+            }
+          }
         }, -- rust-analyzer options
 
         -- debugging stuff
