@@ -8,6 +8,15 @@ return {
     opts = {
       autoformat = false,
     },
+    keys = {
+      {
+        "<leader>xk",
+        function()
+          vim.diagnostic.open_float(nil, { focus = false })
+        end,
+        desc = "DiagnosticFloat",
+      },
+    },
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
@@ -20,7 +29,7 @@ return {
           nls.builtins.formatting.stylua,
           nls.builtins.diagnostics.flake8,
           nls.builtins.formatting.black,
-          nls.builtins.formatting.eslint,
+          nls.builtins.formatting.eslint_d,
           nls.builtins.formatting.prettier.with({
             filetypes = {
               "css",
