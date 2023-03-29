@@ -8,6 +8,16 @@ return {
     opts = {
       autoformat = false,
     },
+    init = function ()
+      require("lspconfig").rust_analyzer.setup({
+        standalone = true,
+        ['rust-analyzer'] = {
+          macros = {
+            enabled = true
+          }
+        }
+      })
+    end,
     keys = {
       {
         "<leader>xk",
