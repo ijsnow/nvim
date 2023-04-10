@@ -1,5 +1,6 @@
 return {
   "vim-scripts/BufOnly.vim",
+  "tpope/vim-eunuch",
   {
     "easymotion/vim-easymotion",
     init = function()
@@ -36,4 +37,6 @@ return {
       vim.keymap.set("v", "g<C-x>", map.dec_gvisual(), { noremap = true })
     end,
   },
+  "NoahTheDuke/vim-just",
+  "IndianBoy42/tree-sitter-just"
 }
