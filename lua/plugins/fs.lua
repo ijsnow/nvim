@@ -1,5 +1,8 @@
 return {
   {
+    "sophacles/vim-bundle-mako"
+  },
+  {
     "stevearc/oil.nvim",
     config = true,
     keys = {

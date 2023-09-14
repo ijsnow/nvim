@@ -13,6 +13,9 @@ return {
         standalone = true,
         ['rust-analyzer'] = {
           macros = {
+            enabled = true,
+          },
+          procMacros = {
             enabled = true
           }
         }
@@ -37,6 +40,9 @@ return {
       return {
         sources = {
           nls.builtins.formatting.stylua,
+          nls.builtins.diagnostics.mypy,
+          -- nls.builtins.diagnostics.ruff,
+          -- nls.builtins.formatting.ruff,
           nls.builtins.diagnostics.flake8,
           nls.builtins.formatting.black,
           nls.builtins.formatting.eslint_d,
@@ -52,7 +58,7 @@ return {
               "markdown",
               "markdown.mdx",
               "graphql",
-              "javascript",
+              "javascript"
             },
           }),
         },

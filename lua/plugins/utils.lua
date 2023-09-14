@@ -2,6 +2,10 @@ return {
   "vim-scripts/BufOnly.vim",
   "tpope/vim-eunuch",
   {
+    "tyru/open-browser-github.vim",
+    dependencies = { "tyru/open-browser.vim" },
+  },
+  {
     "easymotion/vim-easymotion",
     init = function()
       vim.cmd("map ,, <Plug>(easymotion-prefix)")
