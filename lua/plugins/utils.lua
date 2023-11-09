@@ -1,4 +1,5 @@
 return {
+  "prettier/vim-prettier",
   "vim-scripts/BufOnly.vim",
   "tpope/vim-eunuch",
   {
