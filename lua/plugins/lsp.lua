@@ -7,6 +7,11 @@ return {
     ---@class PluginLspOpts
     opts = {
       autoformat = false,
+      setup = {
+        rust_analyzer = function()
+          return true
+        end,
+      },
     },
     -- init = function ()
     --   require("lspconfig").settings.rust_analyzer.setup({
@@ -40,7 +45,7 @@ return {
       return {
         sources = {
           -- nls.builtins.formatting.stylua,
-          nls.builtins.diagnostics.mypy,
+          -- nls.builtins.diagnostics.mypy,
           -- nls.builtins.diagnostics.ruff,
           -- nls.builtins.formatting.ruff,
           -- nls.builtins.diagnostics.flake8,
